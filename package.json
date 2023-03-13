@@ -37,8 +37,8 @@
     }
   },
   "lint-staged": {
-    "**/*.{js,ts,vue}": [
-      "npx prettier --config prettierrc.cjs --write",
+    "**/*.{js,cjs,ts,vue}": [
+      "npx prettier --config prettier.config.cjs --write",
       "npx eslint --fix"
     ]
   },
