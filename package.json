@@ -8,8 +8,7 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "format": "prettier --write \"**/*.{js,ts,vue}\"",
-    "prepare": "husky install",
-    "cm": "cz"
+    "prepare": "husky install"
   },
   "dependencies": {
     "husky": "^8.0.3",
@@ -39,7 +38,8 @@
   },
   "lint-staged": {
     "**/*.{js,ts,vue}": [
-      "prettier --write"
+      "npx prettier --config prettierrc.cjs --write",
+      "npx eslint --fix"
     ]
   },
   "config": {
